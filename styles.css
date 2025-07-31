@@ -1,11 +1,16 @@
+/* Required Style Rules: font, text, box model, positioning, background, border, list, pseudo-classes */
+
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
     color: #333333;
-    max-width: 800px;
-    background-color: #f0f0f0;
+    text-align: left;
     margin: 0 auto;
     padding: 0;
+    background-color: #f0f0f0;
+    max-width: 800px;
 }
 
 header {
@@ -14,8 +19,8 @@ header {
     padding: 16px;
     font-size: 24px;
     font-weight: bold;
-    border-radius: 10px 10px 0 0;
     text-align: center;
+    border-radius: 10px 10px 0 0;
 }
 
 section {
@@ -29,31 +34,9 @@ section {
 h2 {
     font-size: 18px;
     font-weight: bold;
-    text-align: left;
-    border-bottom: 2px solid #dddddd;
     margin-top: 0;
+    border-bottom: 2px solid #dddddd;
     padding-bottom: 8px;
-}
-
-.hierarchy div:nth-child(1) {
-    color: red;
-    font-weight: bold;
-    margin-bottom: 4px;
-}
-
-.hierarchy div:nth-child(2) {
-    color: #c62828;
-    margin-bottom: 4px;
-}
-
-.hierarchy div:nth-child(3) {
-    color: #ef6c00;
-    margin-bottom: 4px;
-}
-
-.hierarchy div:nth-child(4) {
-    color: #1e88e5;
-    margin-bottom: 4px;
 }
 
 ul {
@@ -61,27 +44,53 @@ ul {
     list-style-type: disc;
 }
 
+.specificity-list li:nth-child(1) {
+    color: red;
+    font-weight: bold;
+}
+
+.specificity-list li:nth-child(2) {
+    color: #b71c1c;
+}
+
+.specificity-list li:nth-child(3) {
+    color: #ef6c00;
+}
+
+.specificity-list li:nth-child(4) {
+    color: #1e88e5;
+}
+
 pre {
-    background-color: #e0f2f1;
+    background-color: #e0f7fa;
     padding: 12px;
     border-left: 4px solid #1e88e5;
     font-family: monospace;
     white-space: pre-wrap;
     border-radius: 4px;
+    font-size: 14px;
 }
 
+footer {
+    background-color: #e0e0e0;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 2px solid #ccc;
+}
+
+/* Scroll-to-top button */
 #scroll-button {
     position: fixed;
     bottom: 16px;
     right: 16px;
     background-color: #1e88e5;
     color: white;
-    font-size: 24px;
-    border: none;
-    border-radius: 50%;
+    font-size: 20px;
     padding-left: 12px;
     padding-bottom: 4px;
-    font-weight: bold;
+    border-radius: 50%;
     cursor: pointer;
+    text-align: center;
+    font-weight: bold;
 }
-
