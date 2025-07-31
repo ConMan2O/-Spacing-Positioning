@@ -1,86 +1,95 @@
+/* General reset */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333333;
-    max-width: 800px;
-    background-color: #f0f0f0;
-    margin: 0 auto;
-    padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
+/* Header */
 header {
-    background-color: #333333;
-    color: white;
-    padding: 16px;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 10px 10px 0 0;
-    text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
 }
 
+/* Card-style container */
 section {
-    background-color: white;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    padding: 16px;
-    border-radius: 10px;
+  background-color: white;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
 }
 
+/* Section headings */
 h2 {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: left;
-    border-bottom: 2px solid #dddddd;
-    margin-top: 0;
-    padding-bottom: 8px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Colored hierarchy boxes */
+.hierarchy div {
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  border-left: 5px solid transparent;
 }
 
 .hierarchy div:nth-child(1) {
-    color: red;
-    font-weight: bold;
-    margin-bottom: 4px;
+  color: red;
+  font-weight: bold;
 }
 
 .hierarchy div:nth-child(2) {
-    color: #c62828;
-    margin-bottom: 4px;
+  color: #d12c2c;
 }
 
 .hierarchy div:nth-child(3) {
-    color: #ef6c00;
-    margin-bottom: 4px;
+  color: #f28d00;
 }
 
 .hierarchy div:nth-child(4) {
-    color: #1e88e5;
-    margin-bottom: 4px;
+  color: #3a99d9;
 }
 
+/* Bullet list formatting */
 ul {
-    padding-left: 20px;
-    list-style-type: disc;
+  padding-left: 1.5rem;
 }
 
+/* Code block example */
 pre {
-    background-color: #e0f2f1;
-    padding: 12px;
-    border-left: 4px solid #1e88e5;
-    font-family: monospace;
-    white-space: pre-wrap;
-    border-radius: 4px;
+  background-color: #eef6fb;
+  border-left: 4px solid #3a99d9;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 5px;
 }
 
-#scroll-button {
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-    background-color: #1e88e5;
-    color: white;
-    font-size: 24px;
-    border: none;
-    border-radius: 50%;
-    padding-left: 12px;
-    padding-bottom: 4px;
-    font-weight: bold;
-    cursor: pointer;
+/* Sticky bottom arrow */
+.scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: #3a99d9;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
